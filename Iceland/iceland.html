@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="/home/surya/Documents/Website Projects/Pupper Blog/jq.js" type='text/javascript'></script>
+  <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Playfair+Display&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <title>Iceland</title>
+  <style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    z-index: 1;
+  }
+  .background{
+
+    font-family: 'Monoton', sans-serif;
+  background-image: url("/home/surya/Downloads/Iceland/admjnice.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+          background-clip: text;
+  height: 100vh;
+  font-family: 'Monoton', sans-serif;
+  font-weight: bold;
+  font-size: 15rem;
+  text-align: right;
+  top: 50px;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  position: relative;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: start;
+  -moz-box-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: end;
+  -moz-box-pack: end;
+          justify-content: flex-end;
+
+  }
+
+  .background:before {
+  content: '';
+  background-image: inherit;
+  background-size: cover;
+  background-position: 50% 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -2;
+  }
+  h1 {
+  position: absolute;
+  text-align: bottom;
+  width: 100%;
+  color: #fefefe;
+  }
+  .container{
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 20px;
+  overflow: hidden;
+  font-size: 14px;
+  }
+  header::after{
+  content: '';
+  display: table;
+  clear: both;
+  }
+  nav{
+    float: right;
+  }
+  nav ul{
+    margin-top: 25px;
+    list-style: none;
+  }
+  nav li{
+    display: inline-block;
+    margin-left: 80px;
+  }
+  nav a{
+    color: #444;
+    font-family: 'Playfair',sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .logo{
+    float: left;
+    margin-top:-10px;
+  }
+  .space{
+    margin: 200px;
+    text-align: center;
+    font-family: 'Montserrat',sans-serif;
+    text-transform: uppercase;
+    font-size: 50px;
+  }
+ slider{
+   display: block;
+   width: 100%;
+   height: 100%;
+   background-color: #1f1f1f;
+
+   position: absolute;
+ }
+slider > *{
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #1f1f1f;
+  animation: slide 12s infinite;
+}
+slide:nth-child(1){
+  left: 0%;
+  animation-delay: -1s;
+  background-image: url("/home/surya/Downloads/Iceland/jkchurchice.jpg");
+  background-size: cover;
+  background-position: center;
+}
+slide:nth-child(2){
+  left: 100%;
+  animation-delay: 2s;
+  background-image: url("/home/surya/Downloads/Iceland/jonlash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+slide:nth-child(3){
+  left: 100%;
+  animation-delay: 5s;
+  background-image: url("/home/surya/Downloads/Iceland/roblash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+slide:nth-child(4){
+  left: 100%;
+  animation-delay: 8s;
+  background-image: url("/home/surya/Downloads/Iceland/vlash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+slide p{
+  font-family: "Montserrat",sans-serif;
+  font-size: 70px;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  margin-top: 200px;
+  color: #fff;
+}
+.dropdown .dropbtn {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  color: #444;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #757575;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  font-size: 10px;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@keyframes slide {
+  0% {left: 100%; width: 100%; opacity: 1;}
+  5% {left: 0%;}
+  25% {left: 0%;}
+  30% {left: -100%; width: 100%; opacity: 1;}
+  30.0001% {left: -100%; width: 0%; opacity: 0;}
+  100% {left: 100%; width: 100%; opacity: 0;}
+ }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img src="/home/surya/Downloads/Iceland/icelogo.png" width="80px" alt="logo" class="logo">
+      <nav>
+        <ul>
+          <li>
+          <a href="https://www.google.com/flights" target="_blank">Pricing</a>
+          </li>
+          <li>
+            <div class="dropdown">
+              <button class="dropbtn">CONTACT
+              <i class="fa fa-caret-down"></i>
+              </button>
+            <div class="dropdown-content">
+                <a href="https://www.linkedin.com/in/surya-nelakanti-49470b172/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/SuryaNelakanti" target="_blank">GitHub</a>
+                <a href="mailto:suryateja.nelakanti@gmail.com" target="_blank">E-Mail</a>
+                </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+</header>
+<div class="background"><span>VISIT<br /> ICELAND</span></div>
+<div class="space">
+  A land, isolated, untouched.
+</div>
+<div class="slidey">
+<slider>
+  <slide><p>Visit St. Meridien Church</p></slide>
+  <slide><p>Hike along the Landmannalaugar ranges</p></slide>
+  <slide><p>Marvel at the scenic Fjords</p></slide>
+  <slide><p>Watch the Auroras</p></slide>
+</slider>
+</div>
+<script>
+    const background = document.querySelector('.background');
+
+    document.addEventListener('scroll', () => {
+    const scrollY = window.scrollY;
+
+    if(scrollY !== 0) {
+        background.style.backgroundPosition = `calc(20% + ${scrollY}px) calc(20% + ${scrollY}px)`;
+    } else {
+        background.style.backgroundPosition = '';
+    }
+    });
+
+</script>
+</body>
+</html>
